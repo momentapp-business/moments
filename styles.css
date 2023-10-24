@@ -1,0 +1,299 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background: #4600FF;
+    border-bottom: 1px solid black;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.logo {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    transition: transform 0.6s ease;
+}
+
+.logo:hover {
+    transform: rotate(180deg);
+}
+
+nav {
+    display: flex;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    background: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: #8C52FF;
+}
+
+/* Section Styles */
+section {
+    text-align: center;
+    color: #333;
+    padding: 50px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.section-form, .section-thankyou-form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+    font-size: 20px;
+}
+
+.section-thankyou-form h2 {
+    font-size: larger;
+    font-weight: 400;
+}
+
+.section-thankyou-form {
+    font-weight: 300;
+    font-family: sans-serif;
+    background-color: white;
+    border: 1px solid #4600FF;
+    color: #000;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+h1, h2 {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+}
+
+/* Highlighted Text Styles */
+.highlight-text {
+    color: #4600FF;
+}
+
+/* Footer Styles */
+footer {
+    background: #4600FF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 0 10%;
+        font-weight: 400;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .logo {
+        width: 40%;
+        padding-top: 5%;
+        margin-left: 5%;
+        padding-bottom: 5%;
+        height: auto;
+        transition: transform 0.6s ease;
+    }
+    
+    .check-box  {
+        margin-top: 5px;
+        width: 15%;
+    }
+
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-thankyou-form {
+        font-size: small;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 5%;
+        padding-top: 1%;
+        padding-bottom: 3%;
+    }
+
+    footer {
+        font-size: small;
+    }
+
+    .section-thankyou-form h2 {
+        font-size: small;
+        font-weight: 400;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 5px 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 28px;
+    }
+
+    p {
+        margin: 0 10%;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .section-thankyou-form {
+        font-size: medium;
+        margin: 0 auto;
+    }
+
+    .check-box {
+        width: 25%;
+    }
+
+    .logo {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        font-size: 36px;
+    }
+
+    p {
+        margin: 0 15%;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    img {
+        width: auto;
+    }
+
+    .check-box {
+        width: 10%;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .section-thankyou-form {
+        font-size: large;
+        max-width: 50%;
+        margin: auto;
+        padding: 1%;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}

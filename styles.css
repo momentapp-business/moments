@@ -91,6 +91,12 @@ img {
     margin-bottom: 1%;
 }
 
+.gif {
+    display: block;
+    width: 30%;
+    padding: 2%;
+}
+
 h1, h2 {
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -152,6 +158,12 @@ footer a:hover {
 
     img {
         width: 50%;
+    }
+
+    .gif {
+        display: block;
+        width: 80%;
+        padding: 3%;
     }
 
     .logo {
@@ -228,6 +240,12 @@ footer a:hover {
         width: 100%;
     }
 
+    .gif {
+        display: block;
+        width: 90%;
+        padding: 4%;
+    }
+
     .section-thankyou-form {
         font-size: medium;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -302,4 +320,5 @@ footer a:hover {
         padding: 1%;
     }
 
+    
 }

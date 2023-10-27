@@ -136,6 +136,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    position:relative;
 }
 
 footer a {
@@ -145,6 +146,40 @@ footer a {
 
 footer a:hover {
     color: #fff;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Content Module Styles */
+.content-module {
+    background: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 25%;
+}
+
+.content-module h3 {
+    font-size: 24px;
+    color: #4600FF; 
+}
+
+.content-module img,
+.content-module video {
+    max-width: 80%;
+    margin: 10px 0;
+}
+
+.content-module p {
+    font-size: 16px;
+    color: #333; 
 }
 
 /* Media Queries */
@@ -222,6 +257,40 @@ footer a:hover {
         font-size: 20px;
         margin-top: 15px;
     }
+
+    .content-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    /* Content Module Styles */
+    .content-module {
+        background: #fff;
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        width: 60%;
+    }
+    
+    .content-module h3 {
+        font-size: 24px;
+        color: #4600FF; 
+    }
+    
+    .content-module img,
+    .content-module video {
+        max-width: 80%;
+        margin: 10px 0;
+    }
+    
+    .content-module p {
+        font-size: 16px;
+        color: #333; 
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -273,6 +342,40 @@ footer a:hover {
     h1 {
         font-size: 40px;
     }
+
+    .content-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    /* Content Module Styles */
+    .content-module {
+        background: #fff;
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        width: 70%;
+    }
+    
+    .content-module h3 {
+        font-size: 24px;
+        color: #4600FF; 
+    }
+    
+    .content-module img,
+    .content-module video {
+        max-width: 80%;
+        margin: 10px 0;
+    }
+    
+    .content-module p {
+        font-size: 16px;
+        color: #333; 
+    }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -322,6 +425,5 @@ footer a:hover {
         margin: auto;
         padding: 1%;
     }
-
     
 }

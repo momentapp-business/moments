@@ -100,6 +100,12 @@ img {
     padding: 2%;
 }
 
+.content-window-gif {
+    display:block;
+    width: 100%%;
+    padding-left: 10%;
+}
+
 h1, h2 {
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -178,8 +184,10 @@ footer a:hover {
 }
 
 .content-module p {
-    font-size: 16px;
+    font-size: 14px;
     color: #333; 
+    text-align: left;
+    padding-bottom: 1%;
 }
 
 /* Media Queries */
@@ -277,19 +285,26 @@ footer a:hover {
     }
     
     .content-module h3 {
-        font-size: 24px;
+        font-size: 16px;
         color: #4600FF; 
     }
     
     .content-module img,
     .content-module video {
-        max-width: 80%;
+        max-width: 95%;
+        max-height: 95%;
         margin: 10px 0;
     }
     
     .content-module p {
-        font-size: 16px;
-        color: #333; 
+        font-size: 12px;
+        color: #333;
+    }
+
+    .content-window-gif {
+        display:block;
+        width: 80%;
+        padding-left:10%;
     }
 }
 
@@ -362,19 +377,27 @@ footer a:hover {
     }
     
     .content-module h3 {
-        font-size: 24px;
+        font-size: 20px;
         color: #4600FF; 
     }
     
     .content-module img,
     .content-module video {
-        max-width: 80%;
+        max-width: 90%;
         margin: 10px 0;
+    }
+
+    .content-window-gif {
+        display:block;
+        max-width: 90%;
+        max-height: 90%;
+        padding-left:25% ;
     }
     
     .content-module p {
         font-size: 16px;
-        color: #333; 
+        color: #333;
+        text-align: left;
     }
 }
 
@@ -425,5 +448,5 @@ footer a:hover {
         margin: auto;
         padding: 1%;
     }
-    
+
 }

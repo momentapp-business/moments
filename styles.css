@@ -167,7 +167,8 @@ footer a:hover {
     background: #fff;
     border: 2px solid #4600FF;
     padding: 10px;
-    margin: 10px;
+    padding-bottom: 5px;
+    margin: 5px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -188,7 +189,7 @@ footer a:hover {
 
 .video-container video {
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -209,13 +210,13 @@ footer a:hover {
 .date {
     display: inline-block;
     margin-bottom: 10px;
-    padding: 5px 5px; /* Adjust padding as needed */
+    padding-top: 7px;
     text-transform: none;
     font-style: normal;
     color: #4600FF; /* Add this line to set the font color to white */
     background-color: #fff;
     text-decoration: underline;
-    font-size: 14px; /* Set the default font size */
+    font-size: 16px; /* Set the default font size */
 }
 
 /* Rest of your button styles */
@@ -225,11 +226,12 @@ footer a:hover {
 .button-funded {
     display: flex;
     font-family: fantasy;
-    font-size: 14px; /* Set the default font size */
+    font-weight: bold;
+    font-size: 12px; /* Set the default font size */
+    padding: 2px 5px ;
     font-weight: 300;
-    padding: 5px;
-    margin-left: 5px;
     margin-right: 5px;
+    margin-left: 5px;
     max-width: fit-content;
     border-radius: 20px;
 }
@@ -265,21 +267,45 @@ footer a:hover {
 @media screen and (max-width: 375px) {
     /* Styles for iPhone 8 and similar small screens */
     .date, .button-fund, .button-time, .button-activity, .button-funded {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
     /* Styles for iPhone X, iPhone 11, and similar screens */
-    .date, .button-fund, .button-time, .button-activity, .button-funded {
+    .button-fund, .button-time, .button-activity, .button-funded {
+        font-size: 10px;
+    }
+
+    .date {
         font-size: 12px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .gif{
+        width:90%;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for tablets */
-    .date, .button-fund, .button-time, .button-activity, .button-funded {
+    .button-fund, .button-time, .button-activity, .button-funded {
+        font-size: 14px;
+    }
+
+    .date {
         font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .gif{
+        width:70%;
     }
 }
 

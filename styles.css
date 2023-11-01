@@ -196,7 +196,7 @@ footer a:hover {
 }
 
 .fixed-dimensions {
-    appearance: ratio 16px 9px;
+    appearance: 16px 9px;
 }
 
 .button-container {
@@ -227,7 +227,7 @@ footer a:hover {
     display: flex;
     font-family: fantasy;
     font-weight: bold;
-    font-size: 12px; /* Set the default font size */
+    font-size: 10px; /* Set the default font size */
     padding: 2px 5px ;
     font-weight: 300;
     margin-right: 5px;
@@ -288,12 +288,17 @@ footer a:hover {
     .gif{
         width:90%;
     }
+
+    .video-container video {
+        position: absolute;
+        height: 90%;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for tablets */
     .button-fund, .button-time, .button-activity, .button-funded {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .date {
@@ -307,11 +312,16 @@ footer a:hover {
     .gif{
         width:70%;
     }
+
+    .video-container video {
+        position: absolute;
+        height: 70%;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     /* Styles for larger screens up to 1440px */
     .date, .button-fund, .button-time, .button-activity, .button-funded {
-        font-size: 18px;
+        font-size: 14px;
     }
 }

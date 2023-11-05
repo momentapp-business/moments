@@ -341,7 +341,15 @@ footer a:hover {
 
 @media screen and (max-width: 375px) {
     /* Styles for iPhone 8 and similar small screens */
-    .recipient, .button-fund, .button-summary, .button-time, .button-activity, .button-funded {
+.button-other,
+.button-careers,
+.button-college,
+.button-consult,
+.button-fund,
+.button-time,
+.button-activity,
+.button-summary,
+.button-funded {
         font-size: 8px;
     }
 
@@ -352,7 +360,15 @@ footer a:hover {
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
     /* Styles for iPhone X, iPhone 11, and similar screens */
-    .button-fund, .button-time, .button-summary, .button-activity, .button-funded {
+.button-other,
+.button-careers,
+.button-college,
+.button-consult,
+.button-fund,
+.button-time,
+.button-activity,
+.button-summary,
+.button-funded {
         font-size: 10px;
     }
 
@@ -368,6 +384,10 @@ footer a:hover {
         width:90%;
     }
 
+    .img{
+        width: 90%;
+    }
+
     .content-module {
         min-width: 320px;
     }
@@ -380,7 +400,15 @@ footer a:hover {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for tablets */
-    .button-fund, .button-time, .button-summary, .button-activity, .button-funded {
+.button-other,
+.button-careers,
+.button-college,
+.button-consult,
+.button-fund,
+.button-time,
+.button-activity,
+.button-summary,
+.button-funded {
         font-size: 12px;
     }
 
@@ -396,6 +424,10 @@ footer a:hover {
         width:70%;
     }
 
+    .img{
+        width: 70%;
+    }
+
     .content-module {
         min-width: 480px; /* Set a minimum width for each module */
     }
@@ -408,7 +440,15 @@ footer a:hover {
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     /* Styles for larger screens up to 1440px */
-    .button-fund, .button-time, .button-summary, .button-activity, .button-funded {
+.button-other,
+.button-careers,
+.button-college,
+.button-consult,
+.button-fund,
+.button-time,
+.button-activity,
+.button-summary,
+.button-funded
         font-size: 14px;
     }
 }

@@ -65,7 +65,9 @@ section {
 
 img {
     display: block;
+    width: 80%;
     margin: 0 auto;
+    padding-bottom: 10px;
     margin-top: 1%;
     margin-bottom: 1%;
 }
@@ -186,6 +188,12 @@ footer a:hover {
     margin-top: 10px;
 }
 
+.zips-video-container video {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .horizontal-video-container {
     position: relative;
     overflow: hidden;
@@ -223,26 +231,44 @@ footer a:hover {
     right: 10px;
 }
 
+.consultant-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally within the container */
+    text-align: center; /* Center text within the container */
+}
+
+.profile-container {
+    padding-top: 10px;
+    display: flex;
+    align-items: center; /* Center items horizontally within the container */
+}
+
+.profile-photo {
+    width: 25%;
+    max-width: 50px; /* Adjust the maximum width as needed */
+    margin-right: 50px; /* Add spacing between the image and recipient */
+}
+
 .recipient {
-    display: inline-block;
     font-family: cursive;
-    margin-bottom: 10px;
-    padding-top: 7px;
     text-transform: none;
     font-style: normal;
-    color: #4600FF; 
-    background-color: #fff;
-    text-decoration: none;
-    font-size: 16px; 
+    color: #4600FF;
+    font-size: 16px;
 }
 
 /* button styles */
+.button-other,
+.button-careers,
+.button-college,
+.button-consult,
 .button-fund,
 .button-time,
 .button-activity,
 .button-summary,
 .button-funded {
-    display: flex;
+    display:flex;
     font-family: fantasy;
     font-weight: bold;
     font-size: 14px;
@@ -252,6 +278,32 @@ footer a:hover {
     margin-left: 5px;
     max-width: fit-content;
     border-radius: 20px;
+}
+
+.button-other{
+    background-color:thistle;
+    color: #000;
+}
+
+.button-consult:hover {
+    background:aqua;
+    border-radius: 20px;
+}
+
+.button-careers{
+    background-color:cornflowerblue;
+    color: #000;
+}
+
+.button-college{
+    background-color: antiquewhite;
+    color: #000;
+}
+
+.button-consult{
+    background-color:aquamarine;
+    cursor: pointer;
+    color: #000;
 }
 
 .button-summary{

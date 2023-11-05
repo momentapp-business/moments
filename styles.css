@@ -234,20 +234,20 @@ footer a:hover {
 .consultant-window {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally within the container */
-    text-align: center; /* Center text within the container */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
 }
 
 .profile-container {
     padding-top: 10px;
     display: flex;
-    align-items: center; /* Center items horizontally within the container */
+    align-items: center; 
 }
 
 .profile-photo {
     width: 25%;
-    max-width: 50px; /* Adjust the maximum width as needed */
-    margin-right: 50px; /* Add spacing between the image and recipient */
+    max-width: 50px; /* Adjust the maximum width */
+    margin-right: 25px; /* Add spacing between the image and recipient */
 }
 
 .recipient {
@@ -451,4 +451,3 @@ footer a:hover {
 .button-funded
         font-size: 14px;
     }
-}

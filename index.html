@@ -117,6 +117,104 @@
       window.attachEvent("onmessage", handleIFrameMessage);
     }
     </script>
+
+<script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var JFL_233086052784156 = new JotformFeedback({
+      formId: '233086052784156',
+      base: 'https://form.jotform.com/',
+      windowTitle: 'Set up a consultation',
+      backgroundColor: '#4600FF',
+      fontColor: '#FFFFFF',
+      type: 'false',
+      height: 500,
+      width: 700,
+      openOnLoad: false
+    });
+</script>
+<script type="text/javascript">
+var ifr = document.getElementById("lightbox-233086052784156");
+if (ifr) {
+  var src = ifr.src;
+  var iframeParams = [];
+  if (window.location.href && window.location.href.indexOf("?") > -1) {
+    iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+  }
+  if (src && src.indexOf("?") > -1) {
+    iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+    src = src.substr(0, src.indexOf("?"))
+  }
+  iframeParams.push("isIframeEmbed=1");
+  ifr.src = src + "?" + iframeParams.join('&');
+}
+window.handleIFrameMessage = function(e) {
+  if (typeof e.data === 'object') { return; }
+  var args = e.data.split(":");
+  if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
+  if (!iframe) { return; }
+  switch (args[0]) {
+    case "scrollIntoView":
+      iframe.scrollIntoView();
+      break;
+    case "setHeight":
+      iframe.style.height = args[1] + "px";
+      if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+        iframe.style.minHeight = args[1] + "px";
+      }
+      break;
+    case "collapseErrorPage":
+      if (iframe.clientHeight > window.innerHeight) {
+        iframe.style.height = window.innerHeight + "px";
+      }
+      break;
+    case "reloadPage":
+      window.location.reload();
+      break;
+    case "loadScript":
+      if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+      var src = args[1];
+      if (args.length > 3) {
+          src = args[1] + ':' + args[2];
+      }
+      var script = document.createElement('script');
+      script.src = src;
+      script.type = 'text/javascript';
+      document.body.appendChild(script);
+      break;
+    case "exitFullscreen":
+      if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+      else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+      else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+      else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+      else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+      break;
+  }
+  var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+  if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+    var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+    iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+  }
+};
+window.isPermitted = function(originUrl, whitelisted_domains) {
+  var url = document.createElement('a');
+  url.href = originUrl;
+  var hostname = url.hostname;
+  var result = false;
+  if( typeof hostname !== 'undefined' ) {
+    whitelisted_domains.forEach(function(element) {
+        if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+            result = true;
+        }
+    });
+    return result;
+  }
+};
+if (window.addEventListener) {
+  window.addEventListener("message", handleIFrameMessage, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onmessage", handleIFrameMessage);
+}
+</script>
 </head>
 
 <body>
@@ -159,7 +257,7 @@
     </section>
 
     <section class="category">
-      <h3>Browse Experiences</h3>
+      <h3>MoVies</h3>
       <section class="content-container-horizontal">
           <section class="content-container">
               <div class="content-module">
@@ -182,7 +280,7 @@
                       </div>
                   </div>
                   <div class="recipient">
-                    Jeff Alfredo
+                    Chris Nussbaum
                   </div>
                   <p>Me and Sarah driving to the pumpkin patch.</p>
               </div>
@@ -206,7 +304,7 @@
                         </video>
                       </div>
                   <div class="recipient">
-                    Jeff Alfredo
+                    Chris Nussbaum
                   </div>
                   <p>I watched a woman play guitar, sing, and perform while being pulled in a wagon back to the pumpkin patch entrance.</p>
               </div>
@@ -230,7 +328,7 @@
                         </video>
                       </div>
                       <div class="recipient">
-                        Jeff Alfredo
+                        Chris Nussbaum
                       </div>
                   <p>Today has been an eventful day! Sarah drove us back to her place with our pumpkins packed and our shoes muddied.</p>
               </div>
@@ -239,7 +337,7 @@
   </section>
 
   <section class="category">
-    <h3>Zips</h3>
+    <h3>MoZips</h3>
     <section class="content-container-horizontal">
         <section class="content-container">
             <div class="content-module">
@@ -262,7 +360,7 @@
                     </div>
                 </div>
                 <div class="recipient">
-                  Jeff Alfredo
+                  Chris Nussbaum
                 </div>
                 <p>I'm getting ready to go on the waterfall hike. I'm so stoked because I've never seen a waterfall before!</p>
             </div>
@@ -286,7 +384,7 @@
                       </video>
                     </div>
                 <div class="recipient">
-                  Jeff Alfredo
+                  Chris Nussbaum
                 </div>
                 <p>This waterfall was huge! It was amazing and it just may be the coolest waterfall I've ever seen! I'm so stoked for more waterfall hikes.</p>
             </div>
@@ -310,12 +408,99 @@
                       </video>
                     </div>
                     <div class="recipient">
-                      Jeff Alfredo
+                      Chris Nussbaum
                     </div>
                 <p>I'm exhausted after the hike but I can't wait for more hikes in the future! This was an experience of a lifetime! Thanks for making it possible!</p>
             </div>
         </section>
     </section>
+</section>
+
+<section class="category">
+  <h3>Browse: <span class="highlight-text">Learn</span></h3>
+  <section class="content-container-horizontal">
+      <section class="content-container">
+          <div class="content-module">
+              <div class="content-window">
+                  <div class="button-container">
+                    <div class="button-consult">
+                      <a class="btn lightbox-233086052784156">
+                        Consult
+                      </a>
+                    </div>
+                    <div class="button-college">
+                      College
+                  </div>
+                  </div>
+                  <div class="consultant-window">
+                    <div class="profile-container">
+                        <img class="profile-photo" src="profile-photo.png" alt="profile photo">
+                        <div class="recipient">
+                            Chris Nussbaum
+                        </div>
+                    </div>
+                </div>
+                  <div class="zips-video-container">
+                    <img class="img" src="consult-college.png" alt="college image">
+                  </div>
+                  <p>I'll help you with your academic pursuits-- whether that be apply to colleges, learn how to navigate school, or how it can benefit you long term. Click <i>consult</i> to schedule a consultation!</p>
+              </div>            
+      </section>
+      <section class="content-container">
+        <div class="content-module">
+            <div class="content-window">
+                <div class="button-container">
+                  <div class="button-consult">
+                    <a class="btn lightbox-233086052784156">
+                      Consult
+                    </a>
+                  </div>
+                  <div class="button-careers">
+                    Careers
+                </div>
+                </div>
+                <div class="consultant-window">
+                  <div class="profile-container">
+                      <img class="profile-photo" src="profile-photo.png" alt="profile photo">
+                      <div class="recipient">
+                          Chris Nussbaum
+                      </div>
+                  </div>
+              </div>
+                <div class="zips-video-container">
+                  <img class="img" src="consult-careers.png" alt="careers image">
+                </div>
+                <p>Looking for a job but don't know how to get started? Let me help you! I'll help you setup a LinkedIn profile, revamp your resume, and prepare you for your job interviews. Click <i>consult</i> to schedule a consultation!</p>
+            </div>            
+    </section>
+    <section class="content-container">
+      <div class="content-module">
+          <div class="content-window">
+              <div class="button-container">
+                <div class="button-consult">
+                  <a class="btn lightbox-233086052784156">
+                    Consult
+                  </a>
+                </div>
+                <div class="button-other">
+                  Other
+              </div>
+              </div>
+              <div class="consultant-window">
+                <div class="profile-container">
+                    <img class="profile-photo" src="profile-photo.png" alt="profile photo">
+                    <div class="recipient">
+                        Chris Nussbaum
+                    </div>
+                </div>
+            </div>
+              <div class="zips-video-container">
+                <img class="img" src="consult-other.png" alt="other image">
+              </div>
+              <p>Can't find what you're looking for but want some advice just for thoughts and opinions? I've got you. Click <i>consult</i> to schedule a consultation!</p>
+          </div>            
+  </section>
+  </section>
 </section>
 
   </section>

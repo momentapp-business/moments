@@ -181,15 +181,11 @@ footer a:hover {
 .horizontal-video-container video{
     width: 100%;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .zips-video-container video {
-    width: 50%;
-    margin-top: 10px;
-}
-
-.zips-video-container video {
-    width: 50%;
+    width: 60%;
     margin-top: 10px;
     margin-bottom: 10px;
 }

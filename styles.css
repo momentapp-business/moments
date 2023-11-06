@@ -178,16 +178,20 @@ footer a:hover {
     color: #000; 
 }
 
+.content-module p {
+    padding: 10px;
+}
+
 .horizontal-video-container video{
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 5px;
 }
 
 .zips-video-container video {
     width: 60%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 5px;
 }
 
 .horizontal-video-container {
@@ -278,6 +282,7 @@ footer a:hover {
 
 .button-other{
     background-color:thistle;
+    text-decoration: underline;
     color: #000;
 }
 
@@ -288,11 +293,13 @@ footer a:hover {
 
 .button-careers{
     background-color:cornflowerblue;
+    text-decoration: underline;
     color: #000;
 }
 
 .button-college{
     background-color: antiquewhite;
+    text-decoration: underline;
     color: #000;
 }
 
@@ -304,6 +311,7 @@ footer a:hover {
 
 .button-summary{
     background-color: yellow;
+    text-decoration: underline;
     color: #000;
 }
 
@@ -314,16 +322,19 @@ footer a:hover {
 
 .button-funded {
     background-color: darkcyan;
+    text-decoration: underline;
     color: #000;
 }
 
 .button-time {
     background-color:bisque;
+    text-decoration: underline;
     color: #000;
 }
 
 .button-activity {
     background-color: lightblue;
+    text-decoration: underline;
     color: #000;
 }
 

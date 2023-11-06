@@ -169,7 +169,6 @@ footer a:hover {
     background: #fff;
     border: 2px solid #4600FF;
     padding: 10px;
-    padding-bottom: 15px;
     margin: 5px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -179,7 +178,12 @@ footer a:hover {
 }
 
 .content-module p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
     padding: 10px;
+    color:#000;
+    text-align: left;
 }
 
 .horizontal-video-container video{
@@ -227,6 +231,7 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     position: static;
+    padding-top: 5px;
     left: 10px; 
     right: 10px;
 }
@@ -336,14 +341,6 @@ footer a:hover {
     background-color: lightblue;
     text-decoration: underline;
     color: #000;
-}
-
-.content-module p {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 200;
-    color:#000;
-    text-align: left;
 }
 
 @media screen and (max-width: 375px) {

@@ -244,15 +244,15 @@ footer a:hover {
 }
 
 .profile-container {
-    padding-top: 10px;
+    padding:5px;
     display: flex;
     align-items: center; 
 }
 
 .profile-photo {
-    width: 25%;
-    max-width: 50px; /* Adjust the maximum width */
-    margin-right: 25px; /* Add spacing between the image and recipient */
+    padding: 5px;
+    max-width: 70px; /* Adjust the maximum width */
+    margin: auto; /* Add spacing between the image and recipient */
 }
 
 .recipient {
@@ -360,6 +360,10 @@ footer a:hover {
     .content-module {
         min-width: 240px;
     }
+
+    .profile-photo {
+        max-width: 50px; /* Adjust the maximum width */
+    }
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
@@ -396,6 +400,10 @@ footer a:hover {
         min-width: 320px;
     }
 
+    .profile-photo {
+        max-width: 50px; /* Adjust the maximum width */
+    }
+
     .video-container video {
         position: absolute;
         height: 90%;
@@ -430,6 +438,10 @@ footer a:hover {
 
     .img{
         width: 70%;
+    }
+
+    .profile-photo {
+        max-width: 70px; /* Adjust the maximum width */
     }
 
     .content-module {

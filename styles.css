@@ -86,7 +86,7 @@ h1, h2, h3 {
 h3 {
     font-size: 32px;
     margin-top: 10px;
-    color: #000;
+    color: #fff;
     text-align: left;
     margin-left: 20px;
 }
@@ -144,7 +144,7 @@ footer a:hover {
     display: block;
     padding-top: 20px;
     padding-bottom: 10px;
-    background: #fff;
+    background: #4600FF;
     text-align: center;
 }
 
@@ -167,7 +167,7 @@ footer a:hover {
 .content-module {
     position: relative;
     background: #fff;
-    border: 2px solid #4600FF;
+    border: 2px solid #000;
     padding: 10px;
     margin: 5px;
     text-align: center;
@@ -222,11 +222,6 @@ footer a:hover {
     box-shadow: none;
 }
 
-.button-fund:hover {
-    background: green;
-    border-radius: 20px;
-}
-
 .button-container {
     display: flex;
     justify-content: space-between;
@@ -269,8 +264,6 @@ footer a:hover {
 .button-running,
 .button-careers,
 .button-college,
-.button-consult,
-.button-fund,
 .button-time,
 .button-activity,
 .button-summary,
@@ -288,21 +281,49 @@ footer a:hover {
 }
 
 .button-other{
-    background-color:thistle;
     text-decoration: underline;
-    color: #000;
+    font-weight: bold;
+    color: thistle;
 }
 
 .button-sales{
-    background-color:violet;
     text-decoration: underline;
-    color: #000;
+    font-weight: bold;
+    color: violet;
 }
 
 .button-running{
-    background-color:darksalmon;
     text-decoration: underline;
+    font-weight: bold;
+    color: darksalmon;
+}
+
+.button-careers{
+    text-decoration: underline;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.button-college{
+    text-decoration: underline;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.button-consult{
+    background-color:aquamarine;
+    cursor: pointer;
     color: #000;
+    display:flex;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 5px ;
+    font-weight: 300;
+    margin-right: 5px;
+    margin-left: 5px;
+    max-width: fit-content;
+    border-radius: 20px;
 }
 
 .button-consult:hover {
@@ -310,51 +331,48 @@ footer a:hover {
     border-radius: 20px;
 }
 
-.button-careers{
-    background-color:cornflowerblue;
-    text-decoration: underline;
-    color: #000;
-}
-
-.button-college{
-    background-color: antiquewhite;
-    text-decoration: underline;
-    color: #000;
-}
-
-.button-consult{
-    background-color:aquamarine;
-    cursor: pointer;
-    color: #000;
-}
-
-.button-summary{
-    background-color: yellow;
-    text-decoration: underline;
-    color: #000;
-}
-
 .button-fund {
     background-color: lightgreen;
     color: #000;
+    display:flex;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 5px ;
+    font-weight: 300;
+    margin-right: 5px;
+    margin-left: 5px;
+    max-width: fit-content;
+    border-radius: 20px;
     }
 
+.button-fund:hover {
+    background: green;
+    border-radius: 20px;
+}
+
 .button-funded {
-    background-color: darkcyan;
     text-decoration: underline;
-    color: #000;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.button-summary{
+    text-decoration: underline;
+    font-weight: bold;
+    color:dimgray;
 }
 
 .button-time {
-    background-color:bisque;
     text-decoration: underline;
-    color: #000;
+    font-weight: bold;
+    color:bisque;
 }
 
 .button-activity {
-    background-color: lightblue;
     text-decoration: underline;
-    color: #000;
+    font-weight: bold;
+    color: lightblue;
 }
 
 @media screen and (max-width: 375px) {

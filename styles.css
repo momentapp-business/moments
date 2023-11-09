@@ -216,9 +216,7 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     position: static;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .profile-window {
@@ -251,6 +249,8 @@ footer a:hover {
 
 /* button styles */
 .button-other,
+.button-digital-advisor,
+.button-academia,
 .button-sales,
 .button-running,
 .button-careers,
@@ -278,6 +278,12 @@ footer a:hover {
     color: thistle;
 }
 
+.button-digital-advisor{
+    text-decoration: underline;
+    font-weight: bold;
+    color:yellowgreen;
+}
+
 .button-sales{
     text-decoration: underline;
     font-weight: bold;
@@ -296,10 +302,10 @@ footer a:hover {
     color: cornflowerblue;
 }
 
-.button-college{
+.button-academia{
     text-decoration: underline;
     font-weight: bold;
-    color: antiquewhite;
+    color: purple;
 }
 
 .button-consult{
@@ -370,6 +376,8 @@ footer a:hover {
 @media screen and (max-width: 375px) {
     /* Styles for iPhone 8 and similar small screens */
 .button-other,
+.button-digital-advisor,
+.button-academia,
 .button-sales,
 .button-running,
 .button-careers,
@@ -400,6 +408,8 @@ footer a:hover {
 @media screen and (min-width: 376px) and (max-width: 768px) {
     /* Styles for iPhone X, iPhone 11, and similar screens */
 .button-other,
+.button-digital-advisor,
+.button-academia,
 .button-sales,
 .button-running,
 .button-careers,
@@ -458,6 +468,8 @@ footer a:hover {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for tablets */
 .button-sales,
+.button-digital-advisor,
+.button-academia,
 .button-running,
 .button-other,
 .button-careers,
@@ -517,6 +529,8 @@ footer a:hover {
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     /* Styles for larger screens up to 1440px */
 .button-sales,
+.button-academia,
+.button-digital-advisor,
 .button-running,
 .button-other,
 .button-careers,

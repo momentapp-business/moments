@@ -12,7 +12,7 @@ body {
 /* Header Styles */
 header {
     background: #4600FF;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     color: white;
     font-size: 24px;
     font-weight: 700;
@@ -23,8 +23,8 @@ header {
 }
 
 .logo {
-    width: 50%;
-    padding: 5% 0;
+    width: 50px;
+    height: 50px;
     transition: transform 0.6s ease;
 }
 
@@ -58,7 +58,7 @@ nav a:hover {
 /* Section Styles */
 section {
     text-align: center;
-    background-color:#000;
+    background-color:#6200EE;
     color: #333;
     padding: 20px;
     transition: transform 0.5s ease;
@@ -66,17 +66,28 @@ section {
 
 img {
     display: block;
-    width: 80%;
+    height:240px;
+    width: 240px;
+    padding: 5px;
     margin: 0 auto;
-    padding-bottom: 10px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+}
+
+.Mo-videos iframe {
+    width: 400px;
+    height: 225px;
+}
+    
+.Mo-Zips iframe{
+    width: 225px;
+    height: 400px;
 }
 
 .gif {
     display: block;
-    width: 30%;
+    width: 25%;
+    height:25%;
     padding: 2%;
+    border:none;
 }
 
 h1, h2, h3 {
@@ -114,7 +125,7 @@ p {
 
 /* Highlighted Text Styles */
 .highlight-text {
-    color: #4600FF;
+    color: #000;
 }
 
 /* Footer Styles */
@@ -124,6 +135,7 @@ footer {
     text-align: center;
     padding: 20px;
     position: relative;
+    border-top: 2px solid black;
 }
 
 footer a {
@@ -138,15 +150,14 @@ footer a:hover {
 .content-container {
     display:contents;
     justify-content: space-around;
-    flex-wrap:wrap;
-    padding: 10px;
+    flex-wrap:wrap;   
 }
 
 .category {
     display: block;
     padding-top: 20px;
     padding-bottom: 10px;
-    background: #000;
+    background: #6200EE;
     text-align: center;
 }
 
@@ -156,8 +167,6 @@ footer a:hover {
     display: flex;
     overflow-x: scroll;
     width: 100%;
-    padding: 10px;
-    padding-right: 10px;
 }
 
 /* Hide the scrollbar for webkit-based browsers */
@@ -170,13 +179,22 @@ footer a:hover {
     position: relative;
     background: #fff;
     border: 2px solid #4600FF;
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    min-width: 240px; 
+    min-width: 320px; 
     color: #000; 
+}
+
+.content-window {
+    margin:5px;
+}
+
+.content-window p {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .content-module p {
@@ -186,36 +204,6 @@ footer a:hover {
     padding: 10px;
     color:#000;
     text-align: left;
-}
-
-.horizontal-video-container video{
-    width: 100%;
-    margin-right: 5px;
-    padding: 5px;
-}
-
-.zips-video-container video {
-    width: 60%;
-    margin-right: 5px;
-    padding: 5px;
-}
-
-.horizontal-video-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.zips-video-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.horizontal-dimensions {
-    appearance: 16px 9px;
-}
-
-.moments-zips-dimensions {
-    appearance: 9px 16px;
 }
 
 .button-container a {
@@ -233,7 +221,7 @@ footer a:hover {
     right: 10px;
 }
 
-.consultant-window {
+.profile-window {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center items horizontally */
@@ -247,12 +235,13 @@ footer a:hover {
 }
 
 .profile-photo {
-    padding: 5px;
+    border: none;
+    max-height: 70px;
     max-width: 70px; /* Adjust the maximum width */
-    margin: auto; /* Add spacing between the image and recipient */
+    margin: auto; /* Add spacing between the image and moment-user */
 }
 
-.recipient {
+.moment-user {
     font-family: cursive;
     text-transform: none;
     font-style: normal;
@@ -397,7 +386,12 @@ footer a:hover {
         min-width: 240px;
     }
 
+    .content-window {
+        margin:auto;
+    }
+
     .profile-photo {
+        max-height: 50px;
         max-width: 50px; /* Adjust the maximum width */
     }
 }
@@ -418,7 +412,7 @@ footer a:hover {
         font-size: 10px;
     }
 
-    .recipient {
+    .moment-user {
         font-size: 12px;
     }
 
@@ -427,24 +421,36 @@ footer a:hover {
     }
 
     .gif{
-        width:90%;
+        width:80%;
+        height:80%;
     }
 
     .img{
-        width: 90%;
+        width: 80%;
+        height: 80%;
     }
 
     .content-module {
         min-width: 320px;
     }
 
-    .profile-photo {
-        max-width: 50px; /* Adjust the maximum width */
+    .content-window {
+        margin:auto;
     }
 
-    .video-container video {
-        position: absolute;
-        height: 90%;
+    .profile-photo {
+        max-height: 60px;
+        max-width: 60px; /* Adjust the maximum width */
+    }
+
+    .Mo-videos iframe {
+        width: 300px;
+        height: 168.75px;
+    }
+    
+    .Mo-Zips iframe{
+        min-width: 168.75px;
+        min-height: 300px;
     }
 }
 
@@ -464,7 +470,7 @@ footer a:hover {
         font-size: 12px;
     }
 
-    .recipient {
+    .moment-user {
         font-size: 16px;
     }
 
@@ -474,24 +480,37 @@ footer a:hover {
 
     .gif{
         width:70%;
+        height:70%;
     }
 
     .img{
         width: 70%;
+        height: 70%;
     }
 
     .profile-photo {
+        max-height: 70px;
         max-width: 70px; /* Adjust the maximum width */
     }
 
     .content-module {
         min-width: 480px; /* Set a minimum width for each module */
     }
-
-    .video-container video {
-        position: absolute;
-        height: 70%;
+    
+    .content-window {
+        margin: 5px;
     }
+    
+    .Mo-videos iframe {
+        width: 350px;
+        height: 196.875px;
+    }
+    
+    .Mo-Zips iframe{
+        min-width: 196.875px;
+        min-height: 350px;
+    }
+
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -507,5 +526,5 @@ footer a:hover {
 .button-activity,
 .button-summary,
 .button-funded
-        font-size: 14px;
-    }
+    font-size: 14px;
+    }  

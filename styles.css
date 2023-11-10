@@ -544,19 +544,16 @@ footer a:hover {
 
     .menu-box {
         display: block; /* Display the menu for larger screens */
+        list-style-type: none;
         position: fixed;
+        text-align: right; /* Align menu items to the right */
+        height: 40%;
+        margin: 0;
         top: 0;
         right: 0;
         padding: 10px;
         background-color: #fff; /* Adjust background color as needed */
         z-index: 1000; /* Set a high z-index to ensure it's on top of other elements */
-    }
-
-    .menu-box {
-        list-style-type: none;
-        margin-bottom: 0;
-        padding: 0;
-        text-align: right; /* Align menu items to the right */
     }
 
     .menu-item {
@@ -632,19 +629,16 @@ footer a:hover {
 
     .menu-box {
         display: block; /* Display the menu for larger screens */
+        list-style-type: none;
         position: fixed;
+        text-align: right; /* Align menu items to the right */
+        height: 40%;
+        margin: 0;
         top: 0;
         right: 0;
         padding: 10px;
         background-color: #fff; /* Adjust background color as needed */
         z-index: 1000; /* Set a high z-index to ensure it's on top of other elements */
-    }
-
-    .menu-box {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        text-align: right; /* Align menu items to the right */
     }
 
     .menu-item {

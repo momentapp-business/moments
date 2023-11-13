@@ -30,8 +30,8 @@ header {
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     transition: transform 0.6s ease;
 }
 
@@ -174,8 +174,14 @@ img {
     display: block;
     height:240px;
     width: 240px;
-    padding: 10px;
     margin: 0 auto;
+}
+
+.sec-img{
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin-left: 5px;
 }
 
 .Mo-videos iframe {
@@ -337,11 +343,11 @@ footer a:hover {
     align-items: center; 
 }
 
-.profile-photo {
-    border: none;
+.profile-photo{
+    max-width: 70px;
     max-height: 70px;
-    max-width: 70px; /* Adjust the maximum width */
-    margin: auto; /* Add spacing between the image and moment-user */
+    display: block;
+    margin: 0 auto;
 }
 
 .moment-user {
@@ -512,6 +518,12 @@ footer a:hover {
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
+
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+
     /* Styles for iPhone X, iPhone 11, and similar screens */
 .button-other,
 .button-digital-advisor,
@@ -557,6 +569,12 @@ footer a:hover {
         height: 80%;
     }
 
+    .sec-img{
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+    }
+
     .content-module {
         min-width: 375px;
         margin:5px;
@@ -590,8 +608,8 @@ footer a:hover {
     .menu__btn {
         position: fixed;
         padding-top: 18px;
-        top:25px;
-        right:20px;
+        top:15px;
+        right:10px;
         padding-right: 30px;
     }
 

@@ -1,595 +1,722 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moments</title>
-    <link rel="source" type="text/js" href="moments-button.js">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        var JFL_233045482169155 = new JotformFeedback({
-            formId: '233045482169155',
-            base: 'https://form.jotform.com/',
-            windowTitle: 'Fund a moment',
-            backgroundColor: '#4600ff',
-            fontColor: '#FFFFFF',
-            type: 'false',
-            height: 300,
-            width: 480,
-            openOnLoad: false
-        });
-    </script>
-    <script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        var JFL_232945044156052 = new JotformFeedback({
-          formId: '232945044156052',
-          base: 'https://form.jotform.com/',
-          windowTitle: 'Subscribe to Moments',
-          backgroundColor: '#4600FF',
-          fontColor: '#FFFFFF',
-          type: '0',
-          height: 500,
-          width: 700,
-          openOnLoad: false
-        });
-    </script>
-    <script type="text/javascript">
-    var ifr = document.getElementById("lightbox-232945044156052");
-    if (ifr) {
-      var src = ifr.src;
-      var iframeParams = [];
-      if (window.location.href && window.location.href.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-      }
-      if (src && src.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-        src = src.substr(0, src.indexOf("?"))
-      }
-      iframeParams.push("isIframeEmbed=1");
-      ifr.src = src + "?" + iframeParams.join('&');
-    }
-    window.handleIFrameMessage = function(e) {
-      if (typeof e.data === 'object') { return; }
-      var args = e.data.split(":");
-      if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
-      if (!iframe) { return; }
-      switch (args[0]) {
-        case "scrollIntoView":
-          iframe.scrollIntoView();
-          break;
-        case "setHeight":
-          iframe.style.height = args[1] + "px";
-          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-            iframe.style.minHeight = args[1] + "px";
-          }
-          break;
-        case "collapseErrorPage":
-          if (iframe.clientHeight > window.innerHeight) {
-            iframe.style.height = window.innerHeight + "px";
-          }
-          break;
-        case "reloadPage":
-          window.location.reload();
-          break;
-        case "loadScript":
-          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-          var src = args[1];
-          if (args.length > 3) {
-              src = args[1] + ':' + args[2];
-          }
-          var script = document.createElement('script');
-          script.src = src;
-          script.type = 'text/javascript';
-          document.body.appendChild(script);
-          break;
-        case "exitFullscreen":
-          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-          break;
-      }
-      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-      }
-    };
-    window.isPermitted = function(originUrl, whitelisted_domains) {
-      var url = document.createElement('a');
-      url.href = originUrl;
-      var hostname = url.hostname;
-      var result = false;
-      if( typeof hostname !== 'undefined' ) {
-        whitelisted_domains.forEach(function(element) {
-            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-                result = true;
-            }
-        });
-        return result;
-      }
-    };
-    if (window.addEventListener) {
-      window.addEventListener("message", handleIFrameMessage, false);
-    } else if (window.attachEvent) {
-      window.attachEvent("onmessage", handleIFrameMessage);
-    }
-    </script>
-
-<script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
-<script type="text/javascript">
-    var JFL_233086052784156 = new JotformFeedback({
-      formId: '233086052784156',
-      base: 'https://form.jotform.com/',
-      windowTitle: 'Set up a consultation',
-      backgroundColor: '#4600FF',
-      fontColor: '#FFFFFF',
-      type: 'false',
-      height: 500,
-      width: 700,
-      openOnLoad: false
-    });
-</script>
-<script type="text/javascript">
-var ifr = document.getElementById("lightbox-233086052784156");
-if (ifr) {
-  var src = ifr.src;
-  var iframeParams = [];
-  if (window.location.href && window.location.href.indexOf("?") > -1) {
-    iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-  }
-  if (src && src.indexOf("?") > -1) {
-    iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-    src = src.substr(0, src.indexOf("?"))
-  }
-  iframeParams.push("isIframeEmbed=1");
-  ifr.src = src + "?" + iframeParams.join('&');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-window.handleIFrameMessage = function(e) {
-  if (typeof e.data === 'object') { return; }
-  var args = e.data.split(":");
-  if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
-  if (!iframe) { return; }
-  switch (args[0]) {
-    case "scrollIntoView":
-      iframe.scrollIntoView();
-      break;
-    case "setHeight":
-      iframe.style.height = args[1] + "px";
-      if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-        iframe.style.minHeight = args[1] + "px";
-      }
-      break;
-    case "collapseErrorPage":
-      if (iframe.clientHeight > window.innerHeight) {
-        iframe.style.height = window.innerHeight + "px";
-      }
-      break;
-    case "reloadPage":
-      window.location.reload();
-      break;
-    case "loadScript":
-      if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-      var src = args[1];
-      if (args.length > 3) {
-          src = args[1] + ':' + args[2];
-      }
-      var script = document.createElement('script');
-      script.src = src;
-      script.type = 'text/javascript';
-      document.body.appendChild(script);
-      break;
-    case "exitFullscreen":
-      if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-      else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-      else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-      else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-      else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-      break;
-  }
-  var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-  if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-    var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-    iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-  }
-};
-window.isPermitted = function(originUrl, whitelisted_domains) {
-  var url = document.createElement('a');
-  url.href = originUrl;
-  var hostname = url.hostname;
-  var result = false;
-  if( typeof hostname !== 'undefined' ) {
-    whitelisted_domains.forEach(function(element) {
-        if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-            result = true;
-        }
-    });
-    return result;
-  }
-};
-if (window.addEventListener) {
-  window.addEventListener("message", handleIFrameMessage, false);
-} else if (window.attachEvent) {
-  window.attachEvent("onmessage", handleIFrameMessage);
+
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
 }
-</script>
-</head>
 
-<body>
-  <section class ="navbar">
-    <header>
-        <a href="index.html">
-            <img class="logo" src="moments.png" alt="Moments Logo">
-        </a>
-        <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
-          <label class="menu__btn" for="menu__toggle">
-              <span></span>
-          </label>
-      
-          <ul class="menu__box">
-              <li><a class="menu__item" href="https://www.linkedin.com/company/moments-fundraising/?viewAsMember=true" target="_blank">About</a></li>
-              <li><a class="menu__item" href="https://calendly.com/momentapp-business" target="_blank">Chat</a></li>
-              <li><a class="menu__item" href="tel:+1206-601-0535">Contact</a></li>
-          </ul>
-      </div>
-    </header>
-  </section>
+/* Header Styles */
+header {
+    background: #4600FF;
+    border-bottom: 2px solid black;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
 
-    <!--
-    <section class="content-container-horizontal">
-      <nav>
-      <div class ="categories">
-        <a href="https://www.linkedin.com/company/moments-fundraising/?viewAsMember=true" target="_blank">LinkedIn</a>
-      </div>
-    </nav>
-    </section> 
-    -->
+.navbar {
+    text-align: center;
+    background-color:#4600FF;
+    color: #333;
+    transition: transform 0.5s ease;
+}
 
-    <section class ="every-moment-matters">
-            <h1><b>EVERY <span class="highlight-text">MOMENT</span> MATTERS</b></h1>
-            <img class="gif" src="Moments index animation.gif" alt="moments index animation">
-            <p>Help build a community that pays it forward to create moments that last forever.</p>
-            
-      <a class="btn lightbox-232945044156052" 
-      style="
-      margin-top: 16px;
-      text-transform: uppercase;
-      font-size: 14px;
-      text-decoration: none;
-      cursor: pointer;
-      display: inline-block;
-      padding: 10px;
-      font-family: inherit;
-      text-shadow: none;
-      user-select:auto;
-      transition: all,.1s,ease-in;
-      background-color: #000;
-      border-radius: 20px;
-      color: #FFFFFF;
-      ">
-        JOIN THE COMMUNITY
-      </a>        
-    </section>
+.logo {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.6s ease;
+}
 
-    <section class="category">
-        <img class="sec-img" src="hoz-vid-img.png" alt="horizontal video img">
-      <section class="content-container-horizontal">
-          <section class="content-container">
-              <div class="content-module">
-                  <div class="content-window">
-                      <div class="profile-window">
-                        <div class="profile-container">
-                          <img class="profile-photo" src="chris-nussbaum-profile-photo.png" alt="profile photo">
-                            <div class="moment-user">
-                                Chris Nussbaum
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Mo-videos">
-                      <iframe src="https://www.youtube.com/embed/LJTtEJWStPg?si=nShNvMfo4oh6rmnj" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <div class="button-container">  
-                      <div class="button-activity">
-                        Podcast
-                    </div>                  
-                      <div class="button-fund">
-                        <a class="btn lightbox-233045482169155" href="javascript:void(0);">Fund</a>
-                      </div>  
-                    </div>
-                <p>Your iPhone and free editing software allows you to do a lot more than you know. Painting on a canvas is fun and reflecting on it in my Moments Book while shooting a video podcast made it all the better! Grab a snack, sit back and relax, and tune in or watch! Click <i>fund</i> to help me make more podcasts!</p>
-              </div>
-            </div>
+.logo:hover {
+    transform: rotate(180deg);
+}
 
-              <div class="content-module">
-                <div class="content-window">
-                    <div class="profile-window">
-                      <div class="profile-container">
-                        <img class="profile-photo" src="chris-nussbaum-profile-photo.png" alt="profile photo">
-                          <div class="moment-user">
-                              Chris Nussbaum
-                          </div>
-                      </div>
-                  </div>
-                  <div class="Mo-videos">
-                    <iframe src="https://www.youtube.com/embed/tXtum16bnUM?si=D3ZlJ07Te7U04tOB" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                  <div class="button-container">  
-                    <div class="button-activity">
-                      Pumpkin Patch
-                  </div>                  
-                    <div class="button-fund">
-                      <a class="btn lightbox-233045482169155" href="javascript:void(0);">Fund</a>
-                    </div>  
-                  </div>
-              <p>I visited Canada over the weekend and went to a Pumpkin Patch in Richmond, Canada. Me and Sarah listened to a woman sing and play guitar as we got pulled in a wagon and followed a dog back to the entrance of the Pumpkin Patch! Click <i>fund</i> to enhance this experience!</p>
-            </div>
-          </div>
+#menu__toggle {
+    opacity: 0;
+}
 
-            <div class="content-module">
-              <div class="content-window">
-                  <div class="profile-window">
-                    <div class="profile-container">
-                      <img class="profile-photo" src="chris-nussbaum-profile-photo.png" alt="profile photo">
-                        <div class="moment-user">
-                            Chris Nussbaum
-                        </div>
-                    </div>
-                </div>
-                <div class="Mo-videos">
-                  <iframe src="https://www.youtube.com/embed/jLJu1Rm4zqM?si=TL9FlZ6t4bjdbpnp" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="button-container">        
-                  <div class="button-activity">
-                    Performance Arts
-                </div>            
-                  <div class="button-fund">
-                    <a class="btn lightbox-233045482169155" href="javascript:void(0);">Fund</a>
-                  </div>  
-                </div>
-            <p>I watched a performance at UBC recognizing Indian heritage. It made me reflect and ponder about their livelihood and experiences, as well as my own. Hopefully, in the future, everyone can live happily in harmony. Click <i>fund</i> to support them!</p>
-          </div>
-        </div>
-          </section>
-      </section>
-  </section>
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+}
 
-  <section class="category">
-    <img class="sec-img" src="vert-vid-img.png" alt="vertical video img">
-    <section class="content-container-horizontal">
-        <section class="content-container">
-          <div class="content-module">
-            <div class="content-window">
-                <div class="profile-window">
-                  <div class="profile-container">
-                    <img class="profile-photo" src="chris-nussbaum-profile-photo.png" alt="profile photo">
-                      <div class="moment-user">
-                          Chris Nussbaum
-                      </div>
-                  </div>
-              </div>
-              <div class="Mo-Zips">
-                <iframe src="https://www.youtube.com/embed/_a1kvNwpikA" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <div class="button-container">
-                <div class="button-time">
-                    Before
-                </div>
-                <div class="button-activity">
-                    Hike
-                </div>
-                <div class="button-fund">
-                  <a class="btn lightbox-233045482169155" href="javascript:void(0);">Fund</a>
-                </div>
-            </div>
-            <p>I'm stoked to check out some cool waterfalls! I'm currently preparing for my adventure. I can't wait! Thank you for making this moment possible!</p>
-        </div>
-      </div>
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
 
-            <div class="content-module">
-              <div class="content-window">
-                  <div class="profile-window">
-                    <div class="profile-container">
-                      <img class="profile-photo" src="chris-nussbaum-profile-photo.png" alt="profile photo">
-                        <div class="moment-user">
-                            Chris Nussbaum
-                        </div>
-                    </div>
-                </div>
-                <div class="Mo-Zips">
-                  <iframe src="https://www.youtube.com/embed/IGNnjgK3ung?si=9ekP0VM_yrWsqQYw" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="button-container">
-                  <div class="button-time">
-                      During
-                  </div>
-                  <div class="button-activity">
-                      Hike
-                  </div>
-              </div>
-              <p>The waterfalls are amazing! It was a perfect day for a hike and I couldn't have asked for a better day to adventure and explore!</p>
-          </div>
-        </div>
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
 
-          <div class="content-module">
-            <div class="content-window">
-                <div class="profile-window">
-                  <div class="profile-container">
-                    <img class="profile-photo" src="chris-nussbaum-profile-photo.png" alt="profile photo">
-                      <div class="moment-user">
-                          Chris Nussbaum
-                      </div>
-                  </div>
-              </div>
-              <div class="Mo-Zips">
-                <iframe src="https://www.youtube.com/embed/xLgGu3FDq1g?si=aSUYftehd1_O3ChN" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <div class="button-container">
-                  <div class="button-summary">
-                      Summary
-                  </div>
-                  <div class="button-activity">
-                      Hike
-                  </div>
-              </div>
-            <p>After the hike, I was exhausted, but seeing the waterfalls was so worth it! They were absolutely insane and magnificent. You just had to be there!</p>
-        </div>
-      </div>
-      </section>
-    </section>
-</section>
+#menu__toggle:checked ~ .menu__box {
+    right: 0 !important;
+}
 
-<section class="category">
-  <img class="sec-img" src="vert-consult-img.png" alt="vertical consult img">
-  <section class="content-container-horizontal">
-      <section class="content-container">
-          <div class="content-module">
-              <div class="content-window">
-                  <div class="profile-window">
-                    <div class="profile-container">
-                        <img class="profile-photo" src="chase-howard-profile-photo.png" alt="Chase Howard Profile image">
-                        <div class="moment-user">
-                            Chase Howard
-                        </div>
-                    </div>
-                </div>
-                    <img class="img" src="Chase-Howard-Consultant-Image.jpeg" alt="Chase Howard Consultant image">
-                    <div class="button-container">
-                      <div class="button-running">
-                        Running
-                    </div>
-                      <div class="button-consult">
-                        <a class="btn lightbox-233086052784156">
-                          Consult
-                        </a>
-                      </div>
-                    <div class="button-fund">
-                      <a class="btn lightbox-233045482169155" href="javascript:void(0);">Fund</a>
-                    </div>
-                    </div>
-                  <p>There's no one better than Chase to go to for running advice, whether that be footwear recommendations, training plans, fueling and race-prep, or knowing how to have fun while running both mentally and physically! Click <i>consult</i> to schedule some time to talk about your running needs!</p>
-              </div>  
-            </div>          
+.hamburger-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
 
-            <div class="content-module">
-              <div class="content-window">
-                  <div class="profile-window">
-                    <div class="profile-container">
-                        <img class="profile-photo" src="sarah-davis-profile-photo.png" alt="sarah-davis-profile-photo">
-                        <div class="moment-user">
-                          Sarah Davis
-                        </div>
-                    </div>
-                </div>
-                    <img class="img" src="Sarah-Davis-Academia.jpeg" alt="Sarah-Davis-Academia">
-                    <div class="button-container">
-                      <div class="button-academia">
-                        Academia
-                    </div>
-                    <div class="button-consult">
-                      <a class="btn lightbox-233086052784156">
-                        Consult
-                      </a>
-                    </div>
-                  <div class="button-fund">
-                    <a class="btn lightbox-233045482169155" href="javascript:void(0);">Fund</a>
-                  </div>
-                    </div>          
-                  <p>Sarah is currently obtaining her master's and PhD degree at University of British Columbia, studying plant science — specifically how high-value horticulture crops are impacted by different environmental conditions. Click <i>consult</i> to find out how she was able to pursue her academic goals post-undergrad!</p>
-              </div>    
-            </div>
+.menu__btn {
+    padding-top: 18px;
+    display:block;
+    position: fixed;
+    top: 35px; /* Adjust this value as needed */
+    right: 40px; /* Adjust this value as needed */
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color:#fff;
+    background:transparent;
+    cursor: pointer;
+    z-index: 2; /* Use a higher z-index for the button to ensure it's above the menu */
+}
 
-        <div class="content-module">
-            <div class="content-window">
-                <div class="profile-window">
-                  <div class="profile-container">
-                      <img class="profile-photo" src="chris-nussbaum-profile-photo.png" alt="profile photo">
-                      <div class="moment-user">
-                          Chris Nussbaum
-                      </div>
-                  </div>
-              </div>
-                  <img class="img" src="consult-careers.png" alt="careers image">
-                  <div class="button-container">
-                    <div class="button-careers">
-                      Careers
-                  </div>
-                    <div class="button-consult">
-                      <a class="btn lightbox-233086052784156">
-                        Consult
-                      </a>
-                    </div>
-                  <div class="button-fund">
-                    <a class="btn lightbox-233045482169155" href="javascript:void(0);">Fund</a>
-                  </div>
-                  </div>
-                <p>Looking for a job but don't know how to get started? Let Chris help you! Chris will help you setup a LinkedIn profile, revamp your resume, and prepare you for your job interviews. Click <i>consult</i> to schedule a consultation!</p>
-            </div>    
-          </div>     
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition-duration: 0.25s;
+}
 
-          <div class="content-module">
-            <div class="content-window">
-                <div class="profile-window">
-                  <div class="profile-container">
-                      <img class="profile-photo" src="alina-nussbaum-profile-photo.png" alt="alina nussbaum profile photo">
-                      <div class="moment-user">
-                        Alina Nussbaum
-                      </div>
-                  </div>
-              </div>
-                  <img class="img" src="Alina-Nussbaum-Digital-Advisor.png" alt="Alina-Nussbaum-Digital-Advisor">
-                  <div class="button-container">
-                    <div class="button-digital-advisor">
-                      Digital Advisor
-                  </div>
-                  <div class="button-consult">
-                    <a class="btn lightbox-233086052784156">
-                      Consult
-                    </a>
-                  </div>
-                <div class="button-fund">
-                  <a class="btn lightbox-233045482169155" href="javascript:void(0);">Fund</a>
-                </div>
-                  </div>          
-                <p>Alina has worked in the health and sciences sector for multiple years and counting. She has an abundant amount of experience working on digital experiences for clients and customers! Click <i>consult</i> to learn about digital tools and how they intersect with customer experiences!</p>
-            </div>    
-          </div>
+.menu__btn > span::before,
+.menu__btn > span::after {
+    content: '';
+    top: -10px;
+}
 
-      <div class="content-module">
-          <div class="content-window">
-              <div class="profile-window">
-                <div class="profile-container">
-                    <img class="profile-photo" src="bryce-johnson-profile-photo.png" alt="Bryce Johnson profile photo">
-                    <div class="moment-user">
-                      Bryce Johnson
-                    </div>
-                </div>
-            </div>
-                <img class="img" src="Bryce-Johnson-Sales.png" alt="Bryce Johnson Sales image">
-                <div class="button-container">
-                  <div class="button-sales">
-                    Sales
-                </div>
-                <div class="button-consult">
-                  <a class="btn lightbox-233086052784156">
-                    Consult
-                  </a>
-                </div>
-              <div class="button-fund">
-                <a class="btn lightbox-233045482169155" href="javascript:void(0);">Fund</a>
-              </div>
-                </div>          
-              <p>Bryce has an extensive amount of experience selling in retail and external experience selling and marketing products professionally for companies like Tailwind and others! Click <i>consult</i> to learn how you can follow in his footseps.</p>
-          </div>    
-        </div>
-  </section>
-</section>
-  </section>
+.menu__btn > span::after {
+    top: 10px;
+}
 
-  <footer>
-      &copy; 2023 Moments | <a href="https://www.linkedin.com/company/moments-fundraising/?viewAsMember=true" target="_blank">LinkedIn</a>
-  </footer>
-</body>
-</html>
+.menu__box {
+    display:block;
+    position:fixed;
+    top:0;
+    border-radius: 0px 0px 0px 10px;
+    padding-top:100px;
+    height: 200px;
+    right: -125px; /* Initial position off the screen */
+    width: 125px;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px #6200EE;
+    transition-duration: 0.25s;
+}
+
+.menu__item {
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    color: #6200EE;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+nav .categories{
+    display: flex;
+    padding: 10px;
+}
+
+nav .categories a{
+    text-decoration: none;
+    color:#000;
+    box-shadow: 0px 4px 4px #fff(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background:beige;
+    transition: 0.3s ease;
+}
+
+nav .categories a:hover {
+    background: #000;
+    color: #fff;
+    box-shadow: none; 
+}
+
+/* Section Styles */
+section {
+    text-align: center;
+    background-color:#6200EE;
+    color: #333;
+    transition: transform 0.5s ease;
+}
+
+.every-moment-matters{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+img {
+    display: block;
+    height:240px;
+    width: 240px;
+    margin: 0 auto;
+}
+
+.sec-img{
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin-left: 5px;
+}
+
+.Mo-videos iframe {
+    width: 400px;
+    height: 225px;
+}
+    
+.Mo-Zips iframe{
+    width: 225px;
+    height: 400px;
+}
+
+.gif {
+    display: block;
+    width: 40%;
+    height:40%;
+    padding: 2%;
+    border:none;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-size: 32px;
+    color: #fff;
+    text-align: left;
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    color:#fff ;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+p {
+    font-weight: 900;
+    margin:0;
+    text-align: center;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+/* Highlighted Text Styles */
+.highlight-text {
+    color: #000;
+}
+
+/* Footer Styles */
+footer {
+    background: #4600FF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    border-bottom: none;
+    border-top: 2px solid black;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.content-container {
+    display:contents;
+    justify-content: space-around;
+    flex-wrap:wrap;   
+}
+
+.category {
+    display: block;
+    padding: 10px;
+    background: #6200EE;
+    text-align: center;
+}
+
+/* Content Module Styles */
+/* Scrollable container */
+.content-container-horizontal {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+/* Hide the scrollbar for webkit-based browsers */
+.content-container-horizontal::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual content modules within the horizontal scroll container */
+.content-module {
+    position: relative;
+    background: #fff;
+    border: 2px solid #4600FF;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    min-width: 375px; 
+    color: #000; 
+}
+
+.content-window {
+    margin:5px;
+}
+
+.content-window p {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.content-module p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    padding: 15px;
+    color:#000;
+    text-align: left;
+}
+
+.button-container a {
+    text-decoration: none;
+    color:#000;
+    box-shadow: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    padding: 10px;
+}
+
+.profile-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
+.profile-container {
+    padding:5px;
+    display: flex;
+    align-items: center; 
+}
+
+.profile-photo{
+    max-width: 70px;
+    max-height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+.moment-user {
+    font-family: cursive;
+    text-transform: none;
+    font-style: normal;
+    color: #4600FF;
+    font-size: 16px;
+}
+
+/* button styles */
+.button-other,
+.button-digital-advisor,
+.button-academia,
+.button-sales,
+.button-running,
+.button-careers,
+.button-college,
+.button-time,
+.button-activity,
+.button-summary,
+.button-fund,
+.button-funded {
+    display:flex;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px;
+    font-weight: 300;
+    margin-right: 5px;
+    margin-left: 5px;
+    max-width: fit-content;
+    border-radius: 20px;
+}
+
+.button-other{
+    text-decoration: underline;
+    font-weight: bold;
+    color: thistle;
+}
+
+.button-digital-advisor{
+    text-decoration: underline;
+    font-weight: bold;
+    color:yellowgreen;
+}
+
+.button-sales{
+    text-decoration: underline;
+    font-weight: bold;
+    color: violet;
+}
+
+.button-running{
+    text-decoration: underline;
+    font-weight: bold;
+    color: darksalmon;
+}
+
+.button-careers{
+    text-decoration: underline;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.button-academia{
+    text-decoration: underline;
+    font-weight: bold;
+    color: purple;
+}
+
+.button-consult{
+    background-color:aquamarine;
+    cursor: pointer;
+    color: #000;
+    display:flex;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 5px ;
+    font-weight: 300;
+    margin-right: 5px;
+    margin-left: 5px;
+    max-width: fit-content;
+    border-radius: 20px;
+}
+
+.button-consult:hover {
+    background:aqua;
+    border-radius: 20px;
+}
+
+.button-fund {
+    background-color: lightgreen;
+    color: #000;
+    display:flex;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 5px ;
+    font-weight: 300;
+    margin-right: 5px;
+    margin-left: 5px;
+    max-width: fit-content;
+    border-radius: 20px;
+    }
+
+.button-fund:hover {
+    background: green;
+    border-radius: 20px;
+}
+
+.button-funded {
+    text-decoration: underline;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.button-summary{
+    text-decoration: underline;
+    font-weight: bold;
+    color:dimgray;
+}
+
+.button-time {
+    text-decoration: underline;
+    font-weight: bold;
+    color:bisque;
+}
+
+.button-activity {
+    text-decoration: underline;
+    font-weight: bold;
+    color: lightblue;
+}
+
+@media screen and (max-width: 375px) {
+    /* Styles for iPhone 8 and similar small screens */
+.button-other,
+.button-digital-advisor,
+.button-academia,
+.button-sales,
+.button-running,
+.button-careers,
+.button-college,
+.button-consult,
+.button-fund,
+.button-time,
+.button-activity,
+.button-summary,
+.button-funded {
+        font-size: 8px;
+    }
+
+    .content-module {
+        min-width: 240px;
+    }
+
+    .content-window {
+        margin:auto;
+    }
+
+    .profile-photo {
+        max-height: 50px;
+        max-width: 50px; /* Adjust the maximum width */
+    }
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Styles for iPhone X, iPhone 11, and similar screens */
+.button-other,
+.button-digital-advisor,
+.button-academia,
+.button-sales,
+.button-running,
+.button-careers,
+.button-college,
+.button-consult,
+.button-fund,
+.button-time,
+.button-activity,
+.button-summary,
+.button-funded {
+        font-size: 12px;
+    }
+
+    .moment-user {
+        font-size: 14px;
+    }
+
+    .every-moment-matters{
+        padding:10px;
+    }
+
+    .every-moment-matters h1 {
+        font-size: 36px;
+    }
+
+    .every-moment-matters p{
+        text-align: left;
+        margin-left: 25px;
+        padding: 10px;
+    }
+
+    .gif{
+        width:85%;
+        height:85%;
+    }
+
+    .img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .sec-img{
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+    }
+
+    .content-module {
+        min-width: 375px;
+        margin:5px;
+    }
+
+    h3{
+        margin-left: 5px;
+    }
+
+    .content-window {
+        margin:auto;
+    }
+
+    .profile-photo {
+        max-height: 60px;
+        max-width: 60px; /* Adjust the maximum width */
+    }
+
+    .Mo-videos iframe {
+        margin:0;
+        width: 300px;
+        height: 168.75px;
+    }
+    
+    .Mo-Zips iframe{
+        margin:0;
+        min-width: 168.75px;
+        min-height: 300px;
+    }
+
+    .menu__btn {
+        position: fixed;
+        padding-top: 18px;
+        top:15px;
+        right:10px;
+        padding-right: 30px;
+    }
+
+    .menu__box {
+        display:block;
+        position: fixed;
+        top:0;
+        border-radius: 0px 0px 0px 10px;
+        padding-top:70px;
+        height: 170px;
+        right: -125px; /* Initial position off the screen */
+        width: 115px;
+        list-style: none;
+        background-color: #fff;
+        box-shadow: 2px 2px 6px #6200EE;
+        transition-duration: 0.25s;
+    }
+    
+    .menu__item {
+        display: block;
+        text-align: right;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        color: #6200EE;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        transition-duration: 0.25s;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for tablets */
+.button-sales,
+.button-digital-advisor,
+.button-academia,
+.button-running,
+.button-other,
+.button-careers,
+.button-college,
+.button-consult,
+.button-fund,
+.button-time,
+.button-activity,
+.button-summary,
+.button-funded {
+        font-size: 12px;
+    }
+
+    .moment-user {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .gif{
+        width:70%;
+        height:70%;
+    }
+
+    .img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .profile-photo {
+        max-height: 70px;
+        max-width: 70px; /* Adjust the maximum width */
+    }
+
+    .content-module {
+        min-width: 480px; /* Set a minimum width for each module */
+    }
+    
+    .content-window {
+        margin: 5px;
+    }
+    
+    .Mo-videos iframe {
+        width: 350px;
+        height: 196.875px;
+    }
+    
+    .Mo-Zips iframe{
+        min-width: 196.875px;
+        min-height: 350px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Styles for larger screens up to 1440px */
+.button-sales,
+.button-academia,
+.button-digital-advisor,
+.button-running,
+.button-other,
+.button-careers,
+.button-college,
+.button-consult,
+.button-fund,
+.button-time,
+.button-activity,
+.button-summary,
+.button-funded
+    font-size: 14px;
+    }  

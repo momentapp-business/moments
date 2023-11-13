@@ -190,8 +190,8 @@ img {
 
 .gif {
     display: block;
-    width: 25%;
-    height:25%;
+    width: 40%;
+    height:40%;
     padding: 2%;
     border:none;
 }
@@ -241,8 +241,8 @@ footer {
     text-align: center;
     padding: 20px;
     position: relative;
+    border-bottom: none;
     border-top: 2px solid black;
-    border-bottom:none;
 }
 
 footer a {
@@ -549,8 +549,8 @@ footer a:hover {
     }
 
     .gif{
-        width:80%;
-        height:80%;
+        width:85%;
+        height:85%;
     }
 
     .img{

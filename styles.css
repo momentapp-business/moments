@@ -242,6 +242,7 @@ footer {
     padding: 20px;
     position: relative;
     border-top: 2px solid black;
+    border-bottom:none;
 }
 
 footer a {

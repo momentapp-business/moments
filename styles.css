@@ -181,7 +181,7 @@ img {
     display: block;
     height: 80px;
     width: 80px;
-    margin-left: 5px;
+    margin-left: 0;
 }
 
 .Mo-videos iframe {
@@ -572,16 +572,11 @@ footer a:hover {
     .sec-img{
         width: 70px;
         height: 70px;
-        margin-left: 5px;
     }
 
     .content-module {
         min-width: 375px;
         margin:5px;
-    }
-
-    h3{
-        margin-left: 5px;
     }
 
     .content-window {
@@ -609,7 +604,7 @@ footer a:hover {
         position: fixed;
         padding-top: 18px;
         top:15px;
-        right:10px;
+        right:15px;
         padding-right: 30px;
     }
 

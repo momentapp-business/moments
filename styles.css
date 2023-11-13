@@ -74,7 +74,7 @@ header {
     display:block;
     position: fixed;
     top: 35px; /* Adjust this value as needed */
-    right: 40px; /* Adjust this value as needed */
+    right: 35px; /* Adjust this value as needed */
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -124,7 +124,7 @@ header {
 .menu__item {
     display: block;
     text-align: right;
-    margin-right: 50px;
+    margin-right: 40px;
     margin-bottom: 10px;
     color: #6200EE;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -604,7 +604,7 @@ footer a:hover {
         position: fixed;
         padding-top: 18px;
         top:15px;
-        right:15px;
+        right:18px;
         padding-right: 30px;
     }
 
@@ -626,7 +626,7 @@ footer a:hover {
     .menu__item {
         display: block;
         text-align: right;
-        margin-right: 30px;
+        margin-right: 23px;
         margin-bottom: 10px;
         color: #6200EE;
         font-family: Georgia, 'Times New Roman', Times, serif;

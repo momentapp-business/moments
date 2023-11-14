@@ -267,7 +267,6 @@ footer a:hover {
 
 .category {
     display: block;
-    padding: 10px;
     background: #6200EE;
     text-align: center;
 }
@@ -286,35 +285,57 @@ footer a:hover {
 }
 
 /* Individual content modules within the horizontal scroll container */
-.content-module {
+.content-module-hoz {
     position: relative;
     background: #fff;
     border: 2px solid #4600FF;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    min-width: 375px; 
+    min-width: 460px; 
     color: #000; 
 }
 
-.content-window {
-    margin:5px;
+.content-module-vert {
+    position: relative;
+    background: #fff;
+    border: 2px solid #4600FF;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    min-width: 267.5px; 
+    color: #000; 
+}
+
+.content-module {
+    position: relative;
+    background: #fff;
+    border: 2px solid #4600FF;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    min-width: 340px; 
+    color: #000; 
 }
 
 .content-window p {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.content-module p {
     font-size: 14px;
     font-style: normal;
     font-weight: 200;
     padding: 15px;
     color:#000;
     text-align: left;
+}
+
+.content-window p {
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .button-container a {
@@ -532,10 +553,6 @@ footer a:hover {
         font-size: 8px;
     }
 
-    .content-module {
-        min-width: 240px;
-    }
-
     .content-window {
         margin:auto;
     }
@@ -545,6 +562,10 @@ footer a:hover {
         max-width: 50px; /* Adjust the maximum width */
     }
 
+    .content-module, .content-module-hoz, .content-module-vert{
+        min-width: 370px;
+    }
+
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
@@ -552,6 +573,10 @@ footer a:hover {
     .logo{
         width: 60px;
         height: 60px;
+    }
+
+    .content-module, .content-module-hoz, .content-module-vert{
+        min-width: 370px;
     }
 
     /* Styles for iPhone X, iPhone 11, and similar screens */
@@ -605,11 +630,6 @@ footer a:hover {
     .sec-img{
         width: 70px;
         height: 70px;
-    }
-
-    .content-module {
-        min-width: 375px;
-        margin:5px;
     }
 
     .content-window {
@@ -715,12 +735,8 @@ footer a:hover {
         max-width: 70px; /* Adjust the maximum width */
     }
 
-    .content-module {
-        min-width: 480px; /* Set a minimum width for each module */
-    }
-    
     .content-window {
-        margin: 5px;
+        margin: auto;
     }
     
     .Mo-videos iframe {

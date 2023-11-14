@@ -360,14 +360,17 @@ footer a:hover {
 
 /* button styles */
 .button-other,
+.button-tour,
+.button-art,
+.button-podcast,
+.button-halloween,
+.button-hike,
 .button-digital-advisor,
 .button-academia,
 .button-sales,
 .button-running,
 .button-careers,
-.button-college,
 .button-time,
-.button-activity,
 .button-summary,
 .button-fund,
 .button-funded {
@@ -387,6 +390,36 @@ footer a:hover {
     text-decoration: underline;
     font-weight: bold;
     color: thistle;
+}
+
+.button-tour{
+    text-decoration: underline;
+    font-weight: bold;
+    color:violet;   
+}
+
+.button-podcast{
+    text-decoration: underline;
+    font-weight: bold;
+    color:cadetblue;   
+}
+
+.button-halloween{
+    text-decoration: underline;
+    font-weight: bold;
+    color:lightsalmon;   
+}
+
+.button-art{
+    text-decoration: underline;
+    font-weight: bold;
+    color:red;   
+}
+
+.button-hike{
+    text-decoration: underline;
+    font-weight: bold;
+    color:darkolivegreen;   
 }
 
 .button-digital-advisor{
@@ -478,25 +511,22 @@ footer a:hover {
     color:bisque;
 }
 
-.button-activity {
-    text-decoration: underline;
-    font-weight: bold;
-    color: lightblue;
-}
-
 @media screen and (max-width: 375px) {
     /* Styles for iPhone 8 and similar small screens */
 .button-other,
+.button-tour,
+.button-art,
+.button-podcast,
+.button-halloween,
+.button-hike,
 .button-digital-advisor,
 .button-academia,
 .button-sales,
 .button-running,
 .button-careers,
-.button-college,
 .button-consult,
 .button-fund,
 .button-time,
-.button-activity,
 .button-summary,
 .button-funded {
         font-size: 8px;
@@ -526,16 +556,19 @@ footer a:hover {
 
     /* Styles for iPhone X, iPhone 11, and similar screens */
 .button-other,
+.button-tour,
+.button-art,
+.button-podcast,
+.button-halloween,
+.button-hike,
 .button-digital-advisor,
 .button-academia,
 .button-sales,
 .button-running,
 .button-careers,
-.button-college,
 .button-consult,
 .button-fund,
 .button-time,
-.button-activity,
 .button-summary,
 .button-funded {
         font-size: 12px;
@@ -641,16 +674,19 @@ footer a:hover {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for tablets */
 .button-sales,
+.button-tour,
+.button-art,
+.button-podcast,
+.button-halloween,
+.button-hike,
 .button-digital-advisor,
 .button-academia,
 .button-running,
 .button-other,
 .button-careers,
-.button-college,
 .button-consult,
 .button-fund,
 .button-time,
-.button-activity,
 .button-summary,
 .button-funded {
         font-size: 12px;
@@ -701,16 +737,19 @@ footer a:hover {
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     /* Styles for larger screens up to 1440px */
 .button-sales,
+.button-tour,
+.button-art,
+.button-podcast,
+.button-halloween,
+.button-hike,
 .button-academia,
 .button-digital-advisor,
 .button-running,
 .button-other,
 .button-careers,
-.button-college,
 .button-consult,
 .button-fund,
 .button-time,
-.button-activity,
 .button-summary,
 .button-funded
     font-size: 14px;

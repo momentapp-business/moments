@@ -24,7 +24,7 @@ header {
 
 .navbar {
     text-align: center;
-    background-color:#4600FF;
+    background-color: #4600FF;
     color: #333;
     transition: transform 0.5s ease;
 }
@@ -71,18 +71,18 @@ header {
 
 .menu__btn {
     padding-top: 18px;
-    display:block;
+    display: block;
     position: fixed;
-    top: 35px; /* Adjust this value as needed */
-    right: 35px; /* Adjust this value as needed */
+    top: 35px;
+    right: 35px;
     width: 40px;
     height: 40px;
     border-radius: 20px;
     border-style: solid;
-    border-color:#fff;
-    background:transparent;
+    border-color: #fff;
+    background: transparent;
     cursor: pointer;
-    z-index: 2; /* Use a higher z-index for the button to ensure it's above the menu */
+    z-index: 2;
 }
 
 .menu__btn > span,
@@ -107,13 +107,13 @@ header {
 }
 
 .menu__box {
-    display:block;
-    position:fixed;
-    top:0;
+    display: block;
+    position: fixed;
+    top: 0;
     border-radius: 0px 0px 0px 10px;
-    padding-top:100px;
+    padding-top: 100px;
     height: 200px;
-    right: -125px; /* Initial position off the screen */
+    right: -125px;
     width: 125px;
     list-style: none;
     background-color: #fff;
@@ -136,8 +136,8 @@ header {
 
 nav .categories {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 nav .categories a {
@@ -157,30 +157,30 @@ nav .categories a {
 nav .categories a:hover {
     background: #000;
     color: #fff;
-    box-shadow: none; 
+    box-shadow: none;
 }
 
 /* Section Styles */
 section {
     text-align: center;
-    background-color:#6200EE;
+    background-color: #6200EE;
     color: #333;
     transition: transform 0.5s ease;
 }
 
-.every-moment-matters{
+.every-moment-matters {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
 img {
     display: block;
-    height:240px;
+    height: 240px;
     width: 240px;
     margin: 0 auto;
 }
 
-.sec-img{
+.sec-img {
     display: block;
     height: 80px;
     width: 80px;
@@ -191,8 +191,8 @@ img {
     width: 400px;
     height: 225px;
 }
-    
-.Mo-Zips iframe{
+
+.Mo-Zips iframe {
     width: 225px;
     height: 400px;
 }
@@ -200,9 +200,9 @@ img {
 .gif {
     display: block;
     width: 40%;
-    height:40%;
+    height: 40%;
     padding: 2%;
-    border:none;
+    border: none;
 }
 
 h1, h2, h3 {
@@ -219,7 +219,7 @@ h3 {
 
 h1 {
     font-size: 48px;
-    color:#fff ;
+    color: #fff;
     margin-top: 0;
 }
 
@@ -230,7 +230,7 @@ h2 {
 
 p {
     font-weight: 900;
-    margin:0;
+    margin: 0;
     text-align: center;
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -263,9 +263,9 @@ footer a:hover {
 }
 
 .content-container {
-    display:contents;
+    display: contents;
     justify-content: space-around;
-    flex-wrap:wrap;   
+    flex-wrap: wrap;
 }
 
 .category {
@@ -288,32 +288,8 @@ footer a:hover {
 }
 
 /* Individual content modules within the horizontal scroll container */
-.content-module-hoz {
-    position: relative;
-    background: #fff;
-    border: 2px solid #4600FF;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    min-width: 460px; 
-    color: #000; 
-}
-
-.content-module-vert {
-    position: relative;
-    background: #fff;
-    border: 2px solid #4600FF;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    min-width: 267.5px; 
-    color: #000; 
-}
-
+.content-module-hoz,
+.content-module-vert,
 .content-module {
     position: relative;
     background: #fff;
@@ -323,8 +299,19 @@ footer a:hover {
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    min-width: 340px; 
-    color: #000; 
+    color: #000;
+}
+
+.content-module-hoz {
+    min-width: 460px;
+}
+
+.content-module-vert {
+    min-width: 267.5px;
+}
+
+.content-module {
+    min-width: 340px;
 }
 
 .content-window p {
@@ -332,7 +319,7 @@ footer a:hover {
     font-style: normal;
     font-weight: 200;
     padding: 15px;
-    color:#000;
+    color: #000;
     text-align: left;
 }
 
@@ -343,7 +330,7 @@ footer a:hover {
 
 .button-container a {
     text-decoration: none;
-    color:#000;
+    color: #000;
     box-shadow: none;
 }
 
@@ -357,17 +344,17 @@ footer a:hover {
 .profile-window {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center;
     text-align: center;
 }
 
 .profile-container {
-    padding:5px;
+    padding: 5px;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
-.profile-photo{
+.profile-photo {
     max-width: 70px;
     max-height: 70px;
     display: block;
@@ -398,100 +385,73 @@ footer a:hover {
 .button-time,
 .button-summary,
 .button-fund,
-.button-funded {
-    display:flex;
+.button-funded,
+.button-consult {
+    display: flex;
     font-family: fantasy;
     font-weight: bold;
     font-size: 14px;
     padding: 2px;
-    font-weight: 300;
     margin-right: 5px;
     margin-left: 5px;
     max-width: fit-content;
     border-radius: 20px;
-}
-
-.button-other{
     text-decoration: underline;
-    font-weight: bold;
     color: thistle;
 }
 
-.button-tour{
-    text-decoration: underline;
-    font-weight: bold;
-    color:violet;   
-}
-
-.button-podcast{
-    text-decoration: underline;
-    font-weight: bold;
-    color:cadetblue;   
-}
-
-.button-halloween{
-    text-decoration: underline;
-    font-weight: bold;
-    color:lightsalmon;   
-}
-
-.button-art{
-    text-decoration: underline;
-    font-weight: bold;
-    color:red;   
-}
-
-.button-sports{
-    text-decoration: underline;
-    font-weight: bold;
-    color:burlywood;   
-}
-
-.button-hike{
-    text-decoration: underline;
-    font-weight: bold;
-    color:darkolivegreen;   
-}
-
-.button-digital-advisor{
-    text-decoration: underline;
-    font-weight: bold;
-    color:yellowgreen;
-}
-
-.button-sales{
-    text-decoration: underline;
-    font-weight: bold;
+.button-tour {
     color: violet;
 }
 
-.button-running{
-    text-decoration: underline;
-    font-weight: bold;
+.button-podcast {
+    color: cadetblue;
+}
+
+.button-halloween {
+    color: lightsalmon;
+}
+
+.button-art {
+    color: red;
+}
+
+.button-sports {
+    color: burlywood;
+}
+
+.button-hike {
+    color: darkolivegreen;
+}
+
+.button-digital-advisor {
+    color: yellowgreen;
+}
+
+.button-sales {
+    color: violet;
+}
+
+.button-running {
     color: darksalmon;
 }
 
-.button-careers{
-    text-decoration: underline;
-    font-weight: bold;
+.button-careers {
     color: cornflowerblue;
 }
 
-.button-academia{
-    text-decoration: underline;
-    font-weight: bold;
+.button-academia {
     color: purple;
 }
 
-.button-consult{
-    background-color:aquamarine;
+.button-consult,
+.button-fund,
+.button-funded {
+    background-color: aquamarine;
     cursor: pointer;
     color: #000;
-    display:flex;
-    font-family: fantasy;
-    font-weight: bold;
     font-size: 14px;
-    padding: 2px 5px ;
+    padding: 2px 5px;
     font-weight: 300;
     margin-right: 5px;
     margin-left: 5px;
@@ -499,25 +459,15 @@ footer a:hover {
     border-radius: 20px;
 }
 
-.button-consult:hover {
-    background:aqua;
+.button-consult:hover,
+.button-fund:hover {
+    background: aqua;
     border-radius: 20px;
 }
 
 .button-fund {
     background-color: lightgreen;
-    color: #000;
-    display:flex;
-    font-family: fantasy;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 2px 5px ;
-    font-weight: 300;
-    margin-right: 5px;
-    margin-left: 5px;
-    max-width: fit-content;
-    border-radius: 20px;
-    }
+}
 
 .button-fund:hover {
     background: green;
@@ -525,89 +475,84 @@ footer a:hover {
 }
 
 .button-funded {
-    text-decoration: underline;
-    font-weight: bold;
     color: darkcyan;
 }
 
-.button-summary{
-    text-decoration: underline;
-    font-weight: bold;
-    color:dimgray;
+.button-summary {
+    color: dimgray;
 }
 
 .button-time {
-    text-decoration: underline;
-    font-weight: bold;
-    color:bisque;
+    color: bisque;
 }
 
 @media screen and (max-width: 375px) {
     /* Styles for iPhone 8 and similar small screens */
-.button-other,
-.button-sports,
-.button-tour,
-.button-art,
-.button-podcast,
-.button-halloween,
-.button-hike,
-.button-digital-advisor,
-.button-academia,
-.button-sales,
-.button-running,
-.button-careers,
-.button-consult,
-.button-fund,
-.button-time,
-.button-summary,
-.button-funded {
+    .button-other,
+    .button-sports,
+    .button-tour,
+    .button-art,
+    .button-podcast,
+    .button-halloween,
+    .button-hike,
+    .button-digital-advisor,
+    .button-academia,
+    .button-sales,
+    .button-running,
+    .button-careers,
+    .button-consult,
+    .button-fund,
+    .button-time,
+    .button-summary,
+    .button-funded {
         font-size: 8px;
     }
 
     .content-window {
-        margin:auto;
+        margin: auto;
     }
 
     .profile-photo {
         max-height: 50px;
-        max-width: 50px; /* Adjust the maximum width */
+        max-width: 50px;
     }
 
-    .content-module, .content-module-hoz, .content-module-vert{
+    .content-module,
+    .content-module-hoz,
+    .content-module-vert {
         min-width: 370px;
     }
-
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
-
-    .logo{
+    .logo {
         width: 60px;
         height: 60px;
     }
 
-    .content-module, .content-module-hoz, .content-module-vert{
+    .content-module,
+    .content-module-hoz,
+    .content-module-vert {
         min-width: 370px;
     }
 
-    /* Styles for iPhone X, iPhone 11, and similar screens */
-.button-other,
-.button-sports,
-.button-tour,
-.button-art,
-.button-podcast,
-.button-halloween,
-.button-hike,
-.button-digital-advisor,
-.button-academia,
-.button-sales,
-.button-running,
-.button-careers,
-.button-consult,
-.button-fund,
-.button-time,
-.button-summary,
-.button-funded {
+    .button-other,
+    .button-sports,
+    .button-tour,
+    .button-art,
+    .button-podcast,
+    .button-halloween,
+    .button-hike,
+    .button-digital-advisor,
+    .button-academia,
+    .button-sales,
+    .button-running,
+    .button-careers,
+    .button-consult,
+    .button-fund,
+    .button-time,
+    .button-summary,
+    .button-funded {
         font-size: 12px;
     }
 
@@ -615,52 +560,52 @@ footer a:hover {
         font-size: 14px;
     }
 
-    .every-moment-matters{
-        padding:10px;
+    .every-moment-matters {
+        padding: 10px;
     }
 
     .every-moment-matters h1 {
         font-size: 36px;
     }
 
-    .every-moment-matters p{
+    .every-moment-matters p {
         text-align: left;
         margin-left: 25px;
         padding: 10px;
     }
 
-    .gif{
-        width:85%;
-        height:85%;
+    .gif {
+        width: 85%;
+        height: 85%;
     }
 
-    .img{
+    .img {
         width: 80%;
         height: 80%;
     }
 
-    .sec-img{
+    .sec-img {
         width: 70px;
         height: 70px;
     }
 
     .content-window {
-        margin:auto;
+        margin: auto;
     }
 
     .profile-photo {
         max-height: 60px;
-        max-width: 60px; /* Adjust the maximum width */
+        max-width: 60px;
     }
 
     .Mo-videos iframe {
-        margin:0;
+        margin: 0;
         width: 300px;
         height: 168.75px;
     }
-    
-    .Mo-Zips iframe{
-        margin:0;
+
+    .Mo-Zips iframe {
+        margin: 0;
         min-width: 168.75px;
         min-height: 300px;
     }
@@ -668,26 +613,26 @@ footer a:hover {
     .menu__btn {
         position: fixed;
         padding-top: 18px;
-        top:15px;
-        right:18px;
+        top: 15px;
+        right: 18px;
         padding-right: 30px;
     }
 
     .menu__box {
-        display:block;
+        display: block;
         position: fixed;
-        top:0;
+        top: 0;
         border-radius: 0px 0px 0px 10px;
-        padding-top:70px;
+        padding-top: 70px;
         height: 170px;
-        right: -125px; /* Initial position off the screen */
+        right: -125px;
         width: 115px;
         list-style: none;
         background-color: #fff;
         box-shadow: 2px 2px 6px #6200EE;
         transition-duration: 0.25s;
     }
-    
+
     .menu__item {
         display: block;
         text-align: right;
@@ -700,28 +645,27 @@ footer a:hover {
         text-decoration: none;
         transition-duration: 0.25s;
     }
-
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for tablets */
-.button-sales,
-.button-sports,
-.button-tour,
-.button-art,
-.button-podcast,
-.button-halloween,
-.button-hike,
-.button-digital-advisor,
-.button-academia,
-.button-running,
-.button-other,
-.button-careers,
-.button-consult,
-.button-fund,
-.button-time,
-.button-summary,
-.button-funded {
+    .button-sales,
+    .button-sports,
+    .button-tour,
+    .button-art,
+    .button-podcast,
+    .button-halloween,
+    .button-hike,
+    .button-digital-advisor,
+    .button-academia,
+    .button-running,
+    .button-other,
+    .button-careers,
+    .button-consult,
+    .button-fund,
+    .button-time,
+    .button-summary,
+    .button-funded {
         font-size: 12px;
     }
 
@@ -733,31 +677,31 @@ footer a:hover {
         font-size: 28px;
     }
 
-    .gif{
-        width:70%;
-        height:70%;
+    .gif {
+        width: 70%;
+        height: 70%;
     }
 
-    .img{
+    .img {
         width: 70%;
         height: 70%;
     }
 
     .profile-photo {
         max-height: 70px;
-        max-width: 70px; /* Adjust the maximum width */
+        max-width: 70px;
     }
 
     .content-window {
         margin: auto;
     }
-    
+
     .Mo-videos iframe {
         width: 350px;
         height: 196.875px;
     }
-    
-    .Mo-Zips iframe{
+
+    .Mo-Zips iframe {
         min-width: 196.875px;
         min-height: 350px;
     }
@@ -765,22 +709,23 @@ footer a:hover {
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     /* Styles for larger screens up to 1440px */
-.button-sales,
-.button-sports,
-.button-tour,
-.button-art,
-.button-podcast,
-.button-halloween,
-.button-hike,
-.button-academia,
-.button-digital-advisor,
-.button-running,
-.button-other,
-.button-careers,
-.button-consult,
-.button-fund,
-.button-time,
-.button-summary,
-.button-funded
-    font-size: 14px;
-    }  
+    .button-sales,
+    .button-sports,
+    .button-tour,
+    .button-art,
+    .button-podcast,
+    .button-halloween,
+    .button-hike,
+    .button-academia,
+    .button-digital-advisor,
+    .button-running,
+    .button-other,
+    .button-careers,
+    .button-consult,
+    .button-fund,
+    .button-time,
+    .button-summary,
+    .button-funded {
+        font-size: 14px;
+    }
+}

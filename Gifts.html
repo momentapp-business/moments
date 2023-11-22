@@ -6,6 +6,107 @@
     <title>Moments</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="Moments-favicon/favicon.ico">
+
+
+    
+    <script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var JFL_233255863571057 = new JotformFeedback({
+          formId: '233255863571057',
+          base: 'https://form.jotform.com/',
+          windowTitle: 'Christmas Giftcard',
+          backgroundColor: '#4600FF',
+          fontColor: '#FFFFFF',
+          type: '0',
+          height: 500,
+          width: 700,
+          openOnLoad: false
+        });
+    </script>
+    <script type="text/javascript">
+    var ifr = document.getElementById("lightbox-233255863571057");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+            iframe.style.minHeight = args[1] + "px";
+          }
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>
+
 </head>
 
 <body>
@@ -40,11 +141,162 @@
             </div>
             </nav>
       </section>
+
       <section class="form">
           <form class="form-horizontal">
-                <h3>Dec 01, 2023</h3><br>
-                <iframe src="https://wheelofnames.com/ya3-u48" frameborder="none" frameborder color="#fff" width="100%" height="650"></iframe>
+                <iframe src="https://wheelofnames.com/ya3-u48" frameborder="none" frameborder color="#fff" width="100%" height="360"></iframe>
           </form>
+
+          <img class="sec-img" src="gifts-sec-img.png" alt="gift sec img">
+      <section class="category">
+        <section class="content-container-horizontal">
+                <div class="content-module-gifts">
+                  <div class ="content-window">
+                        <div class="profile-window">
+                          <div class="profile-container">
+                              <img class="profile-photo" src="profile-icon.png" alt="Chase Howard Profile image">
+                              <div class="moment-user">
+                                  Moment User
+                              </div>
+                            </div>
+                      </div>
+                      <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                        <div class="flipper">
+                          <div class="front">
+                            <img src="gifts-moments-user-photo.gif" alt="gifts-moments-user-photo">
+                          </div>
+                            <div class="back">
+                              <a class="btn lightbox-233255863571057">
+                                <img src="giftcard-redeem.png" alt="Gift Card Redeem">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="date">
+                                Dec 1, 2023
+                            </div>
+                        <p>24 days until Christmas! Check back to see which <a href="https://www.instagram.com" target="_blank">@moment_member</a> will win $10!</p>
+                  </div>      
+                </div> 
+                <div class="content-module-gifts">
+                  <div class ="content-window">
+                        <div class="profile-window">
+                          <div class="profile-container">
+                              <img class="profile-photo" src="profile-icon.png" alt="Chase Howard Profile image">
+                              <div class="moment-user">
+                                  Moment User
+                              </div>
+                            </div>
+                      </div>
+                      <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="gifts-moments-user-photo.gif" alt="gifts-moments-user-photo">
+                            </div>
+                            <div class="back">
+                              <a class="btn lightbox-233255863571057">
+                                <img src="giftcard-redeem.png" alt="Gift Card Redeem">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="date">
+                                Dec 2, 2023
+                            </div>
+                        <p>23 days until Christams! Check back tomorrow to see the next winner!</p>
+                  </div>      
+                </div> 
+
+                <div class="content-module-gifts">
+                  <div class ="content-window">
+                        <div class="profile-window">
+                          <div class="profile-container">
+                              <img class="profile-photo" src="profile-icon.png" alt="Chase Howard Profile image">
+                              <div class="moment-user">
+                                  Moment User
+                              </div>
+                            </div>
+                      </div>
+                      <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="gifts-moments-user-photo.gif" alt="gifts-moments-user-photo">
+                            </div>
+                            <div class="back">
+                              <a class="btn lightbox-233255863571057">
+                                <img src="giftcard-redeem.png" alt="Gift Card Redeem">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="date">
+                                Dec 3, 2023
+                            </div>
+                            <p>22 days until Christams! Check back tomorrow to see the next winner!</p>
+                  </div>      
+                </div> 
+
+                <div class="content-module-gifts">
+                  <div class ="content-window">
+                        <div class="profile-window">
+                          <div class="profile-container">
+                              <img class="profile-photo" src="profile-icon.png" alt="Chase Howard Profile image">
+                              <div class="moment-user">
+                                  Moment User
+                              </div>
+                            </div>
+                      </div>
+                      <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="gifts-moments-user-photo.gif" alt="gifts-moments-user-photo">
+                            </div>
+                            <div class="back">
+                              <a class="btn lightbox-233255863571057">
+                                <img src="giftcard-redeem.png" alt="Gift Card Redeem">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="date">
+                                Dec 4, 2023
+                            </div>
+                            <p>21 days until Christams! Check back tomorrow to see the next winner!</p>
+                  </div>      
+                </div>
+
+                <div class="content-module-gifts">
+                  <div class ="content-window">
+                        <div class="profile-window">
+                          <div class="profile-container">
+                              <img class="profile-photo" src="profile-icon.png" alt="Chase Howard Profile image">
+                              <div class="moment-user">
+                                  Moment User
+                              </div>
+                            </div>
+                      </div>
+                      <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="gifts-moments-user-photo.gif" alt="gifts-moments-user-photo">
+                            </div>
+                            <div class="back">
+                              <a class="btn lightbox-233255863571057">
+                                <img src="giftcard-redeem.png" alt="Gift Card Redeem">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="date">
+                                Dec 5, 2023
+                            </div>
+                            <p>20 days until Christams! Check back tomorrow to see the next winner!</p>
+                  </div>      
+                </div>
+                 
+      </section>
+        </section>
+      </section>
 <footer>
     &copy; 2023 Moments | <a href="https://www.linkedin.com/company/moments-fundraising/?viewAsMember=true" target="_blank">LinkedIn</a>
 </footer>

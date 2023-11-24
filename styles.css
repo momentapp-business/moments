@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-form{
-padding: 30px 5%;
-box-sizing: border-box;
-}
-
 /* General Styles */
 body {
     font-family: 'Inter', sans-serif;
@@ -265,6 +260,10 @@ h1 {
 
 h2 {
     font-size: 24px;
+    font-family: cursive;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: white;
     margin-top: 0;
 }
 

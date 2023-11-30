@@ -267,6 +267,13 @@ h2 {
     margin-top: 0;
 }
 
+h3 {
+    font-size: 18px;
+    text-align: left;
+    color: #000;
+    margin: 10px;
+}
+
 p {
     font-weight: 900;
     margin: 0;

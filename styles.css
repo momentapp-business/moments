@@ -274,6 +274,29 @@ h3 {
     margin: 10px;
 }
 
+.christmas-video iframe{
+    cursor: pointer;
+    border: 4px solid #fff;
+    margin: 0 auto;
+    width:44%;
+    height:360px;
+}
+
+.christmas-video p{
+    text-align: center;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.christmas-video a{
+    color:lightblue;
+}
+
 p {
     font-weight: 900;
     margin: 0;
@@ -720,6 +743,11 @@ footer a:hover {
     .button-summary,
     .button-funded {
         font-size: 12px;
+    }
+
+    .christmas-video iframe{
+        width:70%;
+        height:100%;
     }
 
     .moment-user {
